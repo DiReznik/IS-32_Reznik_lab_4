@@ -1,0 +1,212 @@
+/* Reset some basic styling */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f7f7f7;
+}
+
+/* Header styling */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    margin-right: 15px;
+}
+
+.cart-button img {
+    width: 24px;
+    cursor: pointer;
+}
+
+.button {
+    background-color: #ff6347;
+    color: white;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #ff4500;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.hero {
+    text-align: center;
+}
+
+.hero-image {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.products {
+    margin-top: 20px;
+}
+
+.products h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    width: 23%;
+    background-color: white;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.product-card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.product-card p {
+    font-size: 16px;
+    color: #ff6347;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Адаптивні стилі */
+@media only screen and (min-width: 1024px) {
+    .news-grid {
+        display: flex;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .search-input {
+        width: 300px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .news-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero {
+        padding: 30px;
+    }
+
+    .search-input {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .product-card {
+        width: 45%; /* Для кращої адаптивності */
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav a {
+        margin: 5px 0;
+    }
+
+    .header-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 10px;
+    }
+
+    .news-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero {
+        padding: 20px;
+    }
+
+    .product-card {
+        width: 100%; /* Повна ширина для мобільних */
+    }
+}
